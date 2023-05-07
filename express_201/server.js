@@ -51,5 +51,5 @@ app.get("/welcome", (req, res) => {
 
 
 app.listen(8000, () => {
-    console.log("The server is running successfully");
+    console.log("The server is running successfully ");
 })
