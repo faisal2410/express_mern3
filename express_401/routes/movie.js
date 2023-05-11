@@ -70,10 +70,6 @@ router.delete("/:movieId/rating", requiredJSON, (req, res, next) => {
     
 })
 
-// router.get("/", (req, res, next) => {
-//     res.json({
-//         title: "Movie"
-//     })
-// })
+
 
 module.exports = router;
