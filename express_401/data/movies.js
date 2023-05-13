@@ -19,7 +19,7 @@ const movies = [
     adult:false,
     overview:"Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
     release_date:"2015-06-17",
-    most_popular: true
+    most_popular: false
   },
   {  
     vote_count:6897,

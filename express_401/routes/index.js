@@ -1,35 +1,10 @@
 const express = require('express');
 let router = express.Router();
-const movies = require("../data/movies");
+
+const { most_popular,test } = require("../controllers/index");
 // console.log(movies);
-router.get("/", (req, res, next) => {
-    res.json({
-        title:"Express"
-    })
-})
+router.get("/", test )
 
-router.get("/most_popular", (req, res, next) => { 
-    let page = req.query.page;
-    if (page == undefined) {
-        page = 1;
-    }
-   
-        let results = movies.filter(movie => {
-            return movie.most_popular;
-        })
-
-        const indexToStart = (page - 1) * 20;
-        results = results.slice(indexToStart, indexToStart + 19);
-        // console.log(results.length);
-
-        res.json({
-            page,            
-            results
-        });
-    
-   
-
-
-})
+router.get("/most_popular", most_popular);
 
 module.exports = router;
