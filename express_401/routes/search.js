@@ -4,12 +4,6 @@ const { search_movie, search_person } = require("../controllers/search");
 const { queryRequired } = require("../middlewares/search");
 
 
-
-// GET/search/movie
-// GET/search/person
-
-
-
 router.use(queryRequired)
 
 
